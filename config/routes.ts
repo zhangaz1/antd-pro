@@ -135,6 +135,12 @@ export default [
         path: '/form/basic',
         component: './Form/Basic',
       },
+      {
+        name: 'step-form',
+        icon: 'smile',
+        path: '/form/step',
+        component: './Form/Step',
+      },
     ],
   },
   {
