@@ -152,6 +152,12 @@ export default [
         path: '/search/applications',
         component: './Search/Applications',
       },
+      {
+        name: 'projects',
+        icon: 'smile',
+        path: '/search/projects',
+        component: './Search/Projects',
+      },
     ],
   },
   {
