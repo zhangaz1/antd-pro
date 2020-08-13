@@ -76,6 +76,12 @@ export default defineConfig({
           path: '/dashboard/analysis',
           component: './Dashboard/Analysis',
         },
+        {
+          name: 'monitor',
+          icon: 'smile',
+          path: '/dashboard/monitor',
+          component: './Dashboard/Monitor',
+        },
       ],
     },
     {
