@@ -61,58 +61,6 @@ export default [
     ],
   },
   {
-    name: 'editor',
-    icon: 'branches',
-    path: '/editor',
-    routes: [
-      {
-        name: 'flow',
-        icon: 'smile',
-        path: '/editor/flow',
-        component: './Editor/Flow',
-      },
-      {
-        name: 'koni',
-        icon: 'smile',
-        path: '/editor/koni',
-        component: './Editor/Koni',
-      },
-      {
-        name: 'mind',
-        icon: 'smile',
-        path: '/editor/mind',
-        component: './Editor/Mind',
-      },
-    ],
-  },
-  {
-    path: '/admin',
-    name: 'admin',
-    icon: 'crown',
-    access: 'canAdmin',
-    component: './Admin',
-    routes: [
-      {
-        path: '/admin/sub-page',
-        name: 'sub-page',
-        icon: 'smile',
-        component: './Welcome',
-      },
-    ],
-  },
-  {
-    path: '/',
-    redirect: '/welcome',
-  },
-  {
-    path: '/403',
-    component: './Error/403',
-  },
-  {
-    path: '/500',
-    component: './Error/500',
-  },
-  {
     name: 'form',
     icon: 'form',
     path: '/form',
@@ -182,6 +130,58 @@ export default [
     ],
   },
   {
+    name: 'editor',
+    icon: 'branches',
+    path: '/editor',
+    routes: [
+      {
+        name: 'flow',
+        icon: 'smile',
+        path: '/editor/flow',
+        component: './Editor/Flow',
+      },
+      {
+        name: 'koni',
+        icon: 'smile',
+        path: '/editor/koni',
+        component: './Editor/Koni',
+      },
+      {
+        name: 'mind',
+        icon: 'smile',
+        path: '/editor/mind',
+        component: './Editor/Mind',
+      },
+    ],
+  },
+  {
+    path: '/admin',
+    name: 'admin',
+    icon: 'crown',
+    access: 'canAdmin',
+    component: './Admin',
+    routes: [
+      {
+        path: '/admin/sub-page',
+        name: 'sub-page',
+        icon: 'smile',
+        component: './Welcome',
+      },
+    ],
+  },
+  {
+    path: '/',
+    redirect: '/welcome',
+  },
+  {
+    path: '/403',
+    component: './Error/403',
+  },
+  {
     component: './Error/404',
+  },
+  {
+    path: '/500',
+    component: './Error/500',
   },
 ];
