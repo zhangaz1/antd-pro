@@ -66,6 +66,19 @@ export default defineConfig({
       ],
     },
     {
+      name: 'dashboard',
+      icon: 'dashboard',
+      path: '/dashboard',
+      routes: [
+        {
+          name: 'analysis',
+          icon: 'smile',
+          path: '/dashboard/analysis',
+          component: './Dashboard/Analysis',
+        },
+      ],
+    },
+    {
       path: '/admin',
       name: 'admin',
       icon: 'crown',
