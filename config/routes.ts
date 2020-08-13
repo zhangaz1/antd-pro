@@ -77,6 +77,12 @@ export default [
 				path: '/editor/koni',
 				component: './Editor/Koni',
 			},
+			{
+				name: 'mind',
+				icon: 'smile',
+				path: '/editor/mind',
+				component: './Editor/Mind',
+			},
 		],
 	},
 	{
