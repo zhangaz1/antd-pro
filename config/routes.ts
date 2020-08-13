@@ -149,6 +149,12 @@ export default [
     path: '/profile',
     routes: [
       {
+        name: 'basic',
+        icon: 'smile',
+        path: '/profile/basic',
+        component: './Profile/Basic',
+      },
+      {
         name: 'advanced',
         icon: 'smile',
         path: '/profile/advanced',
