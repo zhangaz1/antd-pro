@@ -44,6 +44,12 @@ export default defineConfig({
           path: '/user/accountcenter',
           component: './user/AccountCenter',
         },
+        {
+          name: '个人设置',
+          icon: 'smile',
+          path: '/user/accountsettings',
+          component: './user/AccountSettings',
+        },
       ],
     },
     {
