@@ -173,6 +173,12 @@ export default [
         path: '/list/table',
         component: './List/Table',
       },
+      {
+        name: 'card-list',
+        icon: 'smile',
+        path: '/list/card',
+        component: './List/Card',
+      },
     ],
   },
   {
