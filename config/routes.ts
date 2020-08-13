@@ -61,6 +61,19 @@ export default [
 		],
 	},
 	{
+		name: 'editor',
+		icon: 'branches',
+		path: '/editor',
+		routes: [
+			{
+				name: 'flow',
+				icon: 'smile',
+				path: '/editor/flow',
+				component: './Editor/Flow',
+			},
+		],
+	},
+	{
 		path: '/admin',
 		name: 'admin',
 		icon: 'crown',
