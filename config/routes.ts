@@ -140,6 +140,12 @@ export default [
         path: '/search/list',
         component: './Search/List',
       },
+      {
+        name: 'articles',
+        icon: 'smile',
+        path: '/search/articles',
+        component: './Search/Articles',
+      },
     ],
   },
   {
