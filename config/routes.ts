@@ -150,11 +150,16 @@ export default [
     ],
   },
   {
-    name: 'form',
-    icon: 'form',
-    path: '/advanced',
+    name: 'profile',
+    icon: 'profile',
+    path: '/profile',
     routes: [
-
+      {
+        name: 'advanced',
+        icon: 'smile',
+        path: '/profile/advanced',
+        component: './Profile/Advanced',
+      },
     ],
   },
   {

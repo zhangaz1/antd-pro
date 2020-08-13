@@ -57,6 +57,7 @@
     "classnames": "^2.2.6",
     "gg-editor": "^2.0.2",
     "lodash": "^4.17.11",
+    "lodash-decorators": "^6.0.0",
     "lodash.debounce": "^4.0.8",
     "lodash.isequal": "^4.5.0",
     "moment": "^2.25.3",
