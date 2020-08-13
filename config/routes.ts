@@ -161,6 +161,25 @@ export default [
     ],
   },
   {
+    name: 'result',
+    icon: 'check',
+    path: '/result',
+    routes: [
+      {
+        name: 'success',
+        icon: 'smile',
+        path: '/result/success',
+        component: './Result/Success',
+      },
+      {
+        name: 'fail',
+        icon: 'smile',
+        path: '/result/fail',
+        component: './Result/Fail',
+      },
+    ],
+  },
+  {
     name: 'editor',
     icon: 'branches',
     path: '/editor',
