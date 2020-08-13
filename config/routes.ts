@@ -141,6 +141,20 @@ export default [
         path: '/form/step',
         component: './Form/Step',
       },
+
+    ],
+  },
+  {
+    name: 'form',
+    icon: 'form',
+    path: '/advanced',
+    routes: [
+      {
+        name: 'advanced-form',
+        icon: 'smile',
+        path: '/advanced/form',
+        component: './Advanced/Form',
+      },
     ],
   },
   {
