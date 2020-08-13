@@ -122,6 +122,6 @@ const Applications: React.FC<Partial<ModalState>> = (props) => {
   );
 };
 
-export default connect(({ userAndAccountCenter }: { userAndAccountCenter: ModalState }) => ({
-  list: userAndAccountCenter.list,
+export default connect(({ accountAndCenter }: { accountAndCenter: ModalState }) => ({
+  list: accountAndCenter.list,
 }))(Applications);

@@ -38,12 +38,12 @@ const operationTabList = [
   },
 ];
 
-interface AccountCenterProps extends RouteChildrenProps {
+interface CenterProps extends RouteChildrenProps {
   dispatch: Dispatch<any>;
   currentUser: Partial<CurrentUser>;
   currentUserLoading: boolean;
 }
-interface AccountCenterState {
+interface CenterState {
   tabKey?: 'articles' | 'applications' | 'projects';
 }
 
@@ -102,13 +102,13 @@ const TagList: React.FC<{ tags: CurrentUser['tags'] }> = ({ tags }) => {
   );
 };
 
-class AccountCenter extends Component<
-  AccountCenterProps,
-  AccountCenterState
+class Center extends Component<
+  CenterProps,
+  CenterState
 > {
   // static getDerivedStateFromProps(
-  //   props: userAndAccountCenterProps,
-  //   state: userAndAccountCenterState,
+  //   props: accountAndCenterProps,
+  //   state: accountAndCenterState,
   // ) {
   //   const { match, location } = props;
   //   const { tabKey } = state;
@@ -124,7 +124,7 @@ class AccountCenter extends Component<
   //   return null;
   // }
 
-  state: AccountCenterState = {
+  state: CenterState = {
     tabKey: 'articles',
   };
 
@@ -133,10 +133,10 @@ class AccountCenter extends Component<
   componentDidMount() {
     const { dispatch } = this.props;
     dispatch({
-      type: 'userAndAccountCenter/fetchCurrent',
+      type: 'accountAndCenter/fetchCurrent',
     });
     dispatch({
-      type: 'userAndAccountCenter/fetch',
+      type: 'accountAndCenter/fetch',
     });
   }
 
@@ -145,11 +145,11 @@ class AccountCenter extends Component<
     // const { match } = this.props;
     // router.push(`${match.url}/${key}`);
     this.setState({
-      tabKey: key as AccountCenterState['tabKey'],
+      tabKey: key as CenterState['tabKey'],
     });
   };
 
-  renderChildrenByTabKey = (tabKey: AccountCenterState['tabKey']) => {
+  renderChildrenByTabKey = (tabKey: CenterState['tabKey']) => {
     if (tabKey === 'projects') {
       return <Projects />;
     }
@@ -258,12 +258,12 @@ class AccountCenter extends Component<
 export default connect(
   ({
     loading,
-    userAndAccountCenter,
+    accountAndCenter,
   }: {
     loading: { effects: { [key: string]: boolean } };
-    userAndAccountCenter: ModalState;
+    accountAndCenter: ModalState;
   }) => ({
-    currentUser: userAndAccountCenter.currentUser,
-    currentUserLoading: loading.effects['userAndAccountCenter/fetchCurrent'],
+    currentUser: accountAndCenter.currentUser,
+    currentUserLoading: loading.effects['accountAndCenter/fetchCurrent'],
   }),
-)(AccountCenter);
+)(Center);

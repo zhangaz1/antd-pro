@@ -38,18 +38,6 @@ export default defineConfig({
           path: '/user/login',
           component: './user/login',
         },
-        {
-          name: '个人中心',
-          icon: 'smile',
-          path: '/user/accountcenter',
-          component: './user/AccountCenter',
-        },
-        {
-          name: '个人设置',
-          icon: 'smile',
-          path: '/user/accountsettings',
-          component: './user/AccountSettings',
-        },
       ],
     },
     {
@@ -57,6 +45,19 @@ export default defineConfig({
       name: 'welcome',
       icon: 'smile',
       component: './Welcome',
+    },
+    {
+      name: 'account',
+      icon: 'user',
+      path: '/account',
+      routes: [
+        {
+          name: '个人中心',
+          icon: 'smile',
+          path: '/account/center',
+          component: './Account/Center',
+        },
+      ],
     },
     {
       path: '/admin',

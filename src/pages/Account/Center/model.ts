@@ -21,7 +21,7 @@ export interface ModelType {
 }
 
 const Model: ModelType = {
-  namespace: 'userAndAccountCenter',
+  namespace: 'accountAndCenter',
 
   state: {
     currentUser: {},
