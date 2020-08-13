@@ -141,12 +141,6 @@ export default [
         path: '/form/advanced',
         component: './Form/Advanced',
       },
-      {
-        name: 'advanced-form',
-        icon: 'smile',
-        path: '/form/advanced2',
-        component: './Form/Advanced2',
-      },
     ],
   },
   {
