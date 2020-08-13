@@ -111,6 +111,10 @@ export default [
 		redirect: '/welcome',
 	},
 	{
+		path: '/403',
+		component: './403',
+	},
+	{
 		component: './404',
 	},
 ];
