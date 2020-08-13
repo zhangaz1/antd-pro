@@ -232,18 +232,18 @@ export default [
     ],
   },
   {
-    path: '/403',
-    component: './Error/403',
+    path: '/',
+    redirect: '/welcome',
   },
   {
-    component: './Error/404',
+    path: '/403',
+    component: './Error/403',
   },
   {
     path: '/500',
     component: './Error/500',
   },
   {
-    path: '/',
-    redirect: '/welcome',
+    component: './Error/404',
   },
 ];
