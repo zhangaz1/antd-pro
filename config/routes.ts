@@ -52,6 +52,12 @@ export default [
 				path: '/dashboard/monitor',
 				component: './Dashboard/Monitor',
 			},
+			{
+				name: 'workplace',
+				icon: 'smile',
+				path: '/dashboard/workplace',
+				component: './Dashboard/Workplace',
+			},
 		],
 	},
 	{
