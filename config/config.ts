@@ -52,10 +52,16 @@ export default defineConfig({
       path: '/account',
       routes: [
         {
-          name: '个人中心',
+          name: 'center',
           icon: 'smile',
           path: '/account/center',
           component: './Account/Center',
+        },
+        {
+          name: 'settings',
+          icon: 'smile',
+          path: '/account/settings',
+          component: './Account/Settings',
         },
       ],
     },
