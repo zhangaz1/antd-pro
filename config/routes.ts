@@ -162,6 +162,12 @@ export default [
     path: '/list',
     routes: [
       {
+        name: 'basic-list',
+        icon: 'smile',
+        path: '/list/basic',
+        component: './List/Basic',
+      },
+      {
         name: 'table-list',
         icon: 'table',
         path: '/list/table',
