@@ -101,12 +101,6 @@ export default [
     ],
   },
   {
-    name: 'list.table-list',
-    icon: 'table',
-    path: '/list',
-    component: './ListTableList',
-  },
-  {
     path: '/',
     redirect: '/welcome',
   },
@@ -159,6 +153,19 @@ export default [
         icon: 'smile',
         path: '/profile/advanced',
         component: './Profile/Advanced',
+      },
+    ],
+  },
+  {
+    name: 'list',
+    icon: 'table',
+    path: '/list',
+    routes: [
+      {
+        name: 'table-list',
+        icon: 'table',
+        path: '/list/table',
+        component: './List/Table',
       },
     ],
   },
