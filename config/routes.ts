@@ -112,13 +112,13 @@ export default [
 	},
 	{
 		path: '/403',
-		component: './403',
+		component: './Errors/403',
 	},
 	{
 		path: '/500',
-		component: './500',
+		component: './Errors/500',
 	},
 	{
-		component: './404',
+		component: './Errors/404',
 	},
 ];
