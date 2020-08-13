@@ -130,6 +130,19 @@ export default [
     ],
   },
   {
+    name: 'list.search-list',
+    icon: 'search',
+    path: '/search',
+    routes: [
+      {
+        name: 'list',
+        icon: 'smile',
+        path: '/search/list',
+        component: './Search/List',
+      },
+    ],
+  },
+  {
     name: 'editor',
     icon: 'branches',
     path: '/editor',
@@ -170,10 +183,6 @@ export default [
     ],
   },
   {
-    path: '/',
-    redirect: '/welcome',
-  },
-  {
     path: '/403',
     component: './Error/403',
   },
@@ -183,5 +192,9 @@ export default [
   {
     path: '/500',
     component: './Error/500',
+  },
+  {
+    path: '/',
+    redirect: '/welcome',
   },
 ];
