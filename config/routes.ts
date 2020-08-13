@@ -124,12 +124,6 @@ export default [
     path: '/form',
     routes: [
       {
-        name: 'advanced-form',
-        icon: 'smile',
-        path: '/form/advanced',
-        component: './Form/Advanced',
-      },
-      {
         name: 'basic-form',
         icon: 'smile',
         path: '/form/basic',
@@ -141,7 +135,18 @@ export default [
         path: '/form/step',
         component: './Form/Step',
       },
-
+      {
+        name: 'advanced-form',
+        icon: 'smile',
+        path: '/form/form',
+        component: './Form/Form',
+      },
+      {
+        name: 'advanced-form',
+        icon: 'smile',
+        path: '/form/advanced',
+        component: './Form/Advanced',
+      },
     ],
   },
   {
@@ -149,12 +154,7 @@ export default [
     icon: 'form',
     path: '/advanced',
     routes: [
-      {
-        name: 'advanced-form',
-        icon: 'smile',
-        path: '/advanced/form',
-        component: './Advanced/Form',
-      },
+
     ],
   },
   {
