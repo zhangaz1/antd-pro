@@ -2,6 +2,7 @@
 import { defineConfig } from 'umi';
 import defaultSettings from './defaultSettings';
 import proxy from './proxy';
+import routes from './routes';
 const { REACT_APP_ENV } = process.env;
 export default defineConfig({
   hash: true,
@@ -28,91 +29,7 @@ export default defineConfig({
     ie: 11,
   },
   // umi routes: https://umijs.org/docs/routing
-  routes: [
-    {
-      path: '/user',
-      layout: false,
-      routes: [
-        {
-          name: 'login',
-          path: '/user/login',
-          component: './user/login',
-        },
-      ],
-    },
-    {
-      path: '/welcome',
-      name: 'welcome',
-      icon: 'smile',
-      component: './Welcome',
-    },
-    {
-      name: 'account',
-      icon: 'user',
-      path: '/account',
-      routes: [
-        {
-          name: 'center',
-          icon: 'smile',
-          path: '/account/center',
-          component: './Account/Center',
-        },
-        {
-          name: 'settings',
-          icon: 'smile',
-          path: '/account/settings',
-          component: './Account/Settings',
-        },
-      ],
-    },
-    {
-      name: 'dashboard',
-      icon: 'dashboard',
-      path: '/dashboard',
-      routes: [
-        {
-          name: 'analysis',
-          icon: 'smile',
-          path: '/dashboard/analysis',
-          component: './Dashboard/Analysis',
-        },
-        {
-          name: 'monitor',
-          icon: 'smile',
-          path: '/dashboard/monitor',
-          component: './Dashboard/Monitor',
-        },
-      ],
-    },
-    {
-      path: '/admin',
-      name: 'admin',
-      icon: 'crown',
-      access: 'canAdmin',
-      component: './Admin',
-      routes: [
-        {
-          path: '/admin/sub-page',
-          name: 'sub-page',
-          icon: 'smile',
-          component: './Welcome',
-        },
-      ],
-    },
-    {
-      name: 'list.table-list',
-      icon: 'table',
-      path: '/list',
-      component: './ListTableList',
-    },
-    {
-      path: '/',
-      redirect: '/welcome',
-    },
-    {
-      component: './404',
-    },
-  ],
+  routes,
   // Theme for antd: https://ant.design/docs/react/customize-theme-cn
   theme: {
     // ...darkTheme,
