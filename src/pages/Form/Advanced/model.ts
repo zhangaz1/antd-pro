@@ -11,7 +11,7 @@ export interface ModelType {
 }
 
 const Model: ModelType = {
-  namespace: 'advanced',
+  namespace: 'formAndAdvanced',
 
   state: {},
 

@@ -138,14 +138,14 @@ export default [
       {
         name: 'advanced-form',
         icon: 'smile',
-        path: '/form/form',
-        component: './Form/Form',
+        path: '/form/advanced',
+        component: './Form/Advanced',
       },
       {
         name: 'advanced-form',
         icon: 'smile',
-        path: '/form/advanced',
-        component: './Form/Advanced',
+        path: '/form/advanced2',
+        component: './Form/Advanced2',
       },
     ],
   },

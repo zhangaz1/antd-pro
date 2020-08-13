@@ -113,7 +113,7 @@ const Advanced: FC<AdvancedProps> = ({
   const onFinish = (values: { [key: string]: any }) => {
     setError([]);
     dispatch({
-      type: 'advanced/submitAdvancedForm',
+      type: 'formAndAdvanced/submitAdvancedForm',
       payload: values,
     });
   };
@@ -301,5 +301,5 @@ const Advanced: FC<AdvancedProps> = ({
 };
 
 export default connect(({ loading }: { loading: { effects: { [key: string]: boolean } } }) => ({
-  submitting: loading.effects['advanced/submitAdvancedForm'],
+  submitting: loading.effects['formAndAdvanced/submitAdvancedForm'],
 }))(Advanced);
