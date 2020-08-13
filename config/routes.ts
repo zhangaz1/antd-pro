@@ -129,6 +129,12 @@ export default [
         path: '/form/advanced',
         component: './Form/Advanced',
       },
+      {
+        name: 'basic-form',
+        icon: 'smile',
+        path: '/form/basic',
+        component: './Form/Basic',
+      },
     ],
   },
   {
